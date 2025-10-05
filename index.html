@@ -1,0 +1,28 @@
+
+
+<!-- index.html For the Application -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding stylesheet in the code  -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Anonymous Incident Reporting App</title>
+</head>
+<body>
+    <h1>Anonymous Incident Reporting App</h1>
+
+    <label for="incidentMessage">Incident Message:</label>
+    <input type="text" id="incidentMessage" placeholder="Type your incident message">
+    <button id="submitReportBtn">Submit Incident Report</button>
+
+    <label for="reportId">Report ID:</label>
+    <input type="number" id="reportId" placeholder="Enter Report ID">
+    <button id="getReportBtn">Get Decrypted Report</button>
+
+    <div id="decryptedReport"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

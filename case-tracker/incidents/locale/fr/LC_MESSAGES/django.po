@@ -1,0 +1,468 @@
+# FIR incidents translation.
+# Copyright (C) 2015 CERT Société Générale
+# This file is distributed under the same license as the FIR package.
+# Gaetan Crahay <gaetan@crahay.eu>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FIR master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-12 11:13+0200\n"
+"PO-Revision-Date: 2015-03-15 20:24+0100\n"
+"Last-Translator: Gaetan Crahay <gaetan@crahay.eu>\n"
+"Language-Team: fr <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: forms.py:82 forms.py:154 forms.py:155
+msgid "This field is required."
+msgstr "Ce champ est obligatoire."
+
+#: forms.py:91
+msgid "Major?"
+msgstr "Majeur ?"
+
+#: forms.py:126
+msgid ""
+"Incidents without business line can only be created by global incident "
+"handlers."
+msgstr ""
+"Les incidents sans partie prenantes ne peuvent être créés que par des "
+"incident handlers globaux."
+
+#: forms.py:185 models.py:268
+msgid "There can only be one initial status."
+msgstr "Il ne peut y avoir qu'un seul statut initial."
+
+#: models.py:155 models.py:175
+msgid "business line"
+msgstr "partie prenante"
+
+#: models.py:170
+msgid "user"
+msgstr "utilisateur"
+
+#: models.py:179
+msgid "role"
+msgstr "rôle"
+
+#: models.py:183
+msgid "{} is {} on {}"
+msgstr "{} est {} de {}"
+
+#: models.py:186
+msgid "access control entry"
+msgstr "entrée de contrôle d'accès"
+
+#: models.py:187
+msgid "access control entries"
+msgstr "entrées de contrôle d'accès"
+
+#: models.py:272
+msgid "Incident statuses"
+msgstr "Status d'un incident"
+
+#: templates/403.html:13
+msgid "Access denied"
+msgstr "Accès refusé"
+
+#: templates/403.html:16 templates/403.html:17
+msgid "Forbidden"
+msgstr "Interdit"
+
+#: templates/403.html:18
+msgid "You don't have permission to access the requested resource."
+msgstr "Vous n'avez pas l'autorisation d'accéder à cette ressource."
+
+#: templates/403.html:19
+msgid "Go to the dashboard!"
+msgstr "Aller au tableau de bord !"
+
+#: templates/base.html:40 templates/events/new.html:48
+msgid "New event"
+msgstr "Nouvel évènement"
+
+#: templates/base.html:55
+msgid "Default"
+msgstr "Défaut"
+
+#: templates/base.html:61
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/base.html:62
+msgid "Incidents"
+msgstr ""
+
+#: templates/base.html:63
+msgid "Events"
+msgstr "Évènements"
+
+#: templates/base.html:69
+msgid "Currently logged in as"
+msgstr "Connecté en tant que"
+
+#: templates/base.html:70
+msgid "logout"
+msgstr "déconnexion"
+
+#: templates/base.html:73
+msgid "Admin"
+msgstr ""
+
+#: templates/base.html:83
+msgid "search..."
+msgstr "recherche..."
+
+#: templates/dashboard/index.html:19
+msgid "Starred Incidents"
+msgstr "Signets"
+
+#: templates/dashboard/index.html:21 templates/dashboard/index.html:52
+#: templates/dashboard/index.html:59 templates/events/index-all.html:47
+msgid "Loading ..."
+msgstr "Chargement..."
+
+#: templates/dashboard/index.html:22 templates/dashboard/index.html:53
+#: templates/dashboard/index.html:60
+msgid "No incidents to show."
+msgstr "Aucun incident."
+
+#: templates/dashboard/index.html:41
+msgid "Old"
+msgstr "Ancien"
+
+#: templates/events/detail-all.html:26
+msgid "File"
+msgstr "Fichier"
+
+#: templates/events/detail-all.html:28
+msgid "Attribute"
+msgstr "Attribut"
+
+#: templates/events/detail-all.html:39 templates/events/detail-all.html:142
+msgid "Add"
+msgstr "Ajouter"
+
+#: templates/events/detail-all.html:43
+msgctxt "verb"
+msgid "Comment"
+msgstr "Commenter"
+
+#: templates/events/detail-all.html:47 templates/events/table.html:23
+msgid "Edit"
+msgstr "Éditer"
+
+#: templates/events/detail-all.html:56 templates/incidents/followup.html:21
+msgid "Incident followup"
+msgstr "Suivi de l'incident"
+
+#: templates/events/detail-all.html:67 templates/incidents/followup.html:37
+msgid "Incident Leader"
+msgstr "Responsable de l'incident"
+
+#: templates/events/detail-all.html:70 templates/events/new.html:135
+#: templates/incidents/followup.html:40
+msgid "Plan"
+msgstr ""
+
+#: templates/events/detail-all.html:73 templates/events/new.html:94
+#: templates/events/table.html:13 templates/incidents/followup.html:43
+msgid "Severity"
+msgstr "Sévérité"
+
+#: templates/events/detail-all.html:78 templates/events/new.html:79
+#: templates/events/table.html:10 templates/incidents/followup.html:48
+msgid "Category"
+msgstr "Catégorie"
+
+#: templates/events/detail-all.html:81 templates/events/new.html:84
+#: templates/events/table.html:14 templates/incidents/followup.html:50
+msgid "Status"
+msgstr "Statut"
+
+#: templates/events/detail-all.html:86 templates/events/new.html:89
+#: templates/events/table.html:16 templates/incidents/followup.html:55
+msgid "Detection"
+msgstr "Détection"
+
+#: templates/events/detail-all.html:89 templates/incidents/followup.html:58
+msgid "B/L"
+msgstr "P/P"
+
+#: templates/events/detail-all.html:97 templates/events/new.html:50
+#: templates/incidents/followup.html:12
+msgid "Incident"
+msgstr "Incident"
+
+#: templates/events/detail-all.html:97 templates/events/new.html:50
+#: templates/incidents/followup.html:12
+msgid "Event"
+msgstr "Évènement"
+
+#: templates/events/detail-all.html:100 templates/incidents/followup.html:23
+msgid "someone"
+msgstr "quelqu'un"
+
+#: templates/events/detail-all.html:101 templates/incidents/followup.html:24
+#, python-format
+msgid "Opened on %(date)s by %(opened_by)s"
+msgstr "Ouvert le %(date)s par %(opened_by)s"
+
+#: templates/events/detail-all.html:104 templates/events/new.html:151
+msgid "Description"
+msgstr "Description"
+
+#: templates/events/detail-all.html:115
+msgid "Attributes"
+msgstr "Attributs"
+
+#: templates/events/detail-all.html:120
+msgid "Name"
+msgstr "Nom"
+
+#: templates/events/detail-all.html:121
+msgid "Value"
+msgstr "Valeur"
+
+#: templates/events/detail-all.html:131
+msgid "Add attribute"
+msgstr "Ajouter un attribut"
+
+#: templates/events/detail-all.html:157
+msgid "Comments"
+msgstr "Commentaires"
+
+#: templates/events/detail-all.html:171 templates/incidents/followup.html:81
+msgctxt "noun"
+msgid "Comment"
+msgstr "Commentaire"
+
+#: templates/events/detail-all.html:172 templates/events/detail-all.html:198
+#: templates/incidents/followup.html:82
+msgid "Action"
+msgstr "Action"
+
+#: templates/events/detail-all.html:190
+msgid "Add comment"
+msgstr "Commenter"
+
+#: templates/events/detail-all.html:209 templates/events/table.html:8
+#: templates/incidents/followup.html:79
+msgid "Date"
+msgstr ""
+
+#: templates/events/detail-all.html:233 templates/user/profile.html:198
+msgid "Cancel"
+msgstr "Annuler"
+
+#: templates/events/detail-all.html:234
+msgid "Save changes"
+msgstr "Enregistrer les changements"
+
+#: templates/events/index-all.html:13
+msgid "Search results for:"
+msgstr "Résultats de recherche pour :"
+
+#: templates/events/index-all.html:28
+msgid "previous"
+msgstr "précédent"
+
+#: templates/events/index-all.html:31
+#, python-brace-format
+msgid "(page ${current_page} of ${total_pages})"
+msgstr "(page ${current_page} sur ${total_pages})"
+
+#: templates/events/index-all.html:34
+msgid "next"
+msgstr "suivant"
+
+#: templates/events/index-all.html:49
+msgid "No incident found."
+msgstr "Aucun incident trouvé."
+
+#: templates/events/index-all.html:51
+msgid "No event found."
+msgstr "Aucun évènement trouvé."
+
+#: templates/events/new.html:60 templates/incidents/followup.html:68
+msgid "Summary"
+msgstr "Résumé"
+
+#: templates/events/new.html:67 templates/events/table.html:11
+msgid "Subject"
+msgstr "Objet"
+
+#: templates/events/new.html:72 templates/events/table.html:12
+msgid "Business Lines"
+msgstr "Parties prenantes"
+
+#: templates/events/new.html:101
+msgid "Date / Time"
+msgstr "Date / Heure"
+
+#: templates/events/new.html:106
+msgid "Confidentiality"
+msgstr "Confidentialité"
+
+#: templates/events/new.html:113
+msgid "Is an incident"
+msgstr "Est un incident"
+
+#: templates/events/new.html:126
+msgid "Incident details"
+msgstr "Détails de l'incident"
+
+#: templates/events/new.html:130
+msgid "Actor"
+msgstr "Acteur"
+
+#: templates/events/new.html:140
+msgid "Major incident"
+msgstr "Incident majeur"
+
+#: templates/events/new.html:158
+msgid "Save"
+msgstr "Enregister"
+
+#: templates/events/table.html:17
+msgid "Leader"
+msgstr "Responsable"
+
+#: templates/events/table.html:19
+msgid "Last Action"
+msgstr "Dernière Action"
+
+#: templates/events/table.html:20
+msgid "Lvl"
+msgstr "Niv."
+
+#: templates/events/table.html:21
+msgid "Ih"
+msgstr ""
+
+#: templates/incidents/followup.html:21
+msgid "Event followup"
+msgstr "Suivi de l'évènement"
+
+#: templates/incidents/followup.html:74
+msgid "Incident timeline"
+msgstr "Chronologie de l'incident"
+
+#: templates/incidents/followup.html:80
+msgid "Author"
+msgstr "Auteur"
+
+#: templates/incidents/followup.html:100
+msgid "Related files"
+msgstr "Fichiers associés"
+
+#: templates/incidents/followup.html:113
+msgid "No files for this incident."
+msgstr "Aucun fichier pour cet incident."
+
+#: templates/incidents/login.html:7
+msgid "Sign in &middot; FIR"
+msgstr "Se connecter à &middot; FIR"
+
+#: templates/incidents/login.html:32
+msgid "Sign in to FIR"
+msgstr "Se connecter à FIR"
+
+#: templates/incidents/login.html:35 templates/user/profile.html:64
+msgid "Username"
+msgstr "Utilisateur"
+
+#: templates/incidents/login.html:38
+msgid "Password"
+msgstr "Mot de passe"
+
+#: templates/incidents/login.html:42
+msgid "Remember me"
+msgstr "Se souvenir de moi"
+
+#: templates/incidents/login.html:45
+msgid "Sign in"
+msgstr "Connexion"
+
+#: templates/incidents/login.html:51
+msgid "Wrong username / password combination."
+msgstr "Mauvais couple utilisateur / mot de passe"
+
+#: templates/incidents/login.html:51
+msgid "I can break the rules, too."
+msgstr ""
+
+#: templates/user/profile.html:23 templates/user/profile.html:149
+#: templates/user/profile.html:199
+msgid "Change password"
+msgstr "Modifier le mot de passe"
+
+#: templates/user/profile.html:36
+msgid "Password changed!"
+msgstr "Mot de passe modifié !"
+
+#: templates/user/profile.html:37 templates/user/profile.html:42
+msgid "Close"
+msgstr "Fermer"
+
+#: templates/user/profile.html:40
+msgid "Error: password not changed."
+msgstr "Erreur: le mot de passe n'a pas été changé."
+
+#: templates/user/profile.html:56
+#, python-format
+msgid "%(user_name)s's profile"
+msgstr "Profil de %(user_name)s"
+
+#: templates/user/profile.html:67
+msgid "Email"
+msgstr ""
+
+#: templates/user/profile.html:79
+msgid "First name"
+msgstr "Prénom"
+
+#: templates/user/profile.html:88
+msgid "Last name"
+msgstr "Nom"
+
+#: templates/user/profile.html:101
+msgid "Number of incidents per page"
+msgstr "Nombre d'incidents par page"
+
+#: templates/user/profile.html:111 templates/user/profile.html:114
+msgid "Hide closed events?"
+msgstr "Masquer les incidents fermés ?"
+
+#: templates/user/profile.html:123
+msgid "Preferred light mode"
+msgstr "Thème préféré"
+
+# Dynamic status
+msgid "Open"
+msgstr "Ouvert"
+
+msgctxt "action"
+msgid "Open"
+msgstr "Ouvrir"
+
+msgid "Blocked"
+msgstr "Bloqué"
+
+msgctxt "action"
+msgid "Block"
+msgstr "Bloquer"
+
+msgid "Block"
+msgstr "Bloquer"
+
+msgid "Closed"
+msgstr "Fermé"
+
+msgctxt "action"
+msgid "Close"
+msgstr "Fermer"

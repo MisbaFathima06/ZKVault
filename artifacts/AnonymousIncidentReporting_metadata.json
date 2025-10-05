@@ -1,0 +1,187 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "reporter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "reportId",
+						"type": "uint256"
+					}
+				],
+				"name": "IncidentReported",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_reportId",
+						"type": "uint256"
+					}
+				],
+				"name": "decryptReport",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_reportId",
+						"type": "uint256"
+					}
+				],
+				"name": "getDecryptedReport",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasReported",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "incidentReports",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "reporter",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isDecrypted",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "submitIncidentReport",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"decryptReport(uint256)": {
+					"details": "Allows the decryption of an incident report.",
+					"params": {
+						"_reportId": "The ID of the incident report to decrypt. Developers should implement the necessary decryption logic based on the specific requirements of their project."
+					}
+				},
+				"getDecryptedReport(uint256)": {
+					"details": "Retrieves the content of a decrypted incident report.",
+					"params": {
+						"_reportId": "The ID of the incident report to retrieve. Developers should implement the necessary decryption logic based on the specific requirements of their project."
+					}
+				},
+				"submitIncidentReport(string)": {
+					"details": "Allows users to submit anonymous incident reports.",
+					"params": {
+						"_message": "The content of the incident report message. Developers should ensure proper validation and security measures to protect the anonymity of the reporter and the content of the report."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"anonymous.sol": "AnonymousIncidentReporting"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"anonymous.sol": {
+			"keccak256": "0x9077f90c36d01226b735670c2976b0b48d4f3da5a0a68efa3d35303641558f0d",
+			"license": "SEE LICENSE IN LICENSE",
+			"urls": [
+				"bzz-raw://7d7defa529dc46d7b844de22bf809da7b1b728b7c6f7a5d5d86de45e1df6f9fa",
+				"dweb:/ipfs/QmanmVtMV6U99spgVkkFzQryS6mvuzf7YXrdnyAC33FPs6"
+			]
+		}
+	},
+	"version": 1
+}

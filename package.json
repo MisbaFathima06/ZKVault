@@ -1,0 +1,20 @@
+{
+  "name": "anonymous-incident-reporting-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "celo-sdk": "^1.0.4",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.4"
+  }
+}
