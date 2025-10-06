@@ -97,3 +97,21 @@ export const IncidentStatus = z.enum(["pending", "in_progress", "resolved", "clo
 export const IncidentPriority = z.enum(["low", "medium", "high", "critical"]);
 export const IncidentType = z.enum(["hardware", "software", "network", "security", "service", "other"]);
 export const UserRole = z.enum(["admin", "employee", "user"]);
+
+// In ZKVault/ai-classifier/shared/schema.ts (Add these fields inside the z.object({...}))
+
+export const incidentSchema = z.object({
+  id: z.string().optional(),
+  // ... existing fields
+
+  // --- ADD THESE SPEAKSECURE CORE FIELDS ---
+  ipfsCID: z.string().min(40, { message: "IPFS CID is required" }),
+  complaintHash: z.string().min(64, { message: "SHA256 Hash is required" }),
+  nullifierHash: z.string().min(64, { message: "Nullifier Hash is required for ZK Proof" }),
+  isPublic: z.boolean().default(false),
+  upvoteCount: z.number().optional().default(0),
+  // -----------------------------------------
+  
+  // ... existing fields (like subject, date, description)
+  // Ensure the existing 'description' field is kept, as it now holds the ENCRYPTED text.
+});
